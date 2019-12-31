@@ -20,7 +20,7 @@ public class Helper {
                 return Arrays.stream(sb.toString().split(",")).mapToInt(s -> Integer.parseInt(s)).toArray();
             }
         } catch (IOException ex) {
-            ex.printStackTrace();
+//            ex.printStackTrace();
         }
         return null;
     }
