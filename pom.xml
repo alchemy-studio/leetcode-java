@@ -9,10 +9,12 @@
     <version>1.0.0-SNAPSHOT</version>
 
     <properties>
+        <java.version>11</java.version>
+        <maven.compiler.source>11</maven.compiler.source>
+        <maven.compiler.target>11</maven.compiler.target>
         <junit.jupiter.version>5.6.0-M1</junit.jupiter.version>
         <surefire.version>3.0.0-M4</surefire.version>
         <checkstyle.version>3.1.0</checkstyle.version>
-        <java.jdk.version>8</java.jdk.version>
     </properties>
 
 
@@ -64,14 +66,6 @@
 
     <build>
         <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-compiler-plugin</artifactId>
-                <configuration>
-                    <source>${java.jdk.version}</source>
-                    <target>${java.jdk.version}</target>
-                </configuration>
-            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-checkstyle-plugin</artifactId>
